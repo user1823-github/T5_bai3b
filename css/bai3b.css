@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-form {
+    margin-top: 10%;
+    box-shadow: 2px 2px 5px gray;
+    padding: 10px;
+    width: 70%;
+}
+
+form,
+h3 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text {
+    color: orangered;
+}
+
+.btn-primary {
+    background-color: orangered;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.title:first-child {
+    width: 305px;
+}
+
+.carousel-control-prev {
+    left: -90% !important;
+}
+
+.carousel-control-next {
+    right: -90% !important;
+}
