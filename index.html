@@ -12,7 +12,10 @@
 
 </head>
 <style>
-
+    form {
+        position: relative;
+        z-index: 3;
+    }
 </style>
 
 <body>
@@ -37,116 +40,84 @@
                 <div class="modal-body">
                     <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                         <div class="carousel-inner">
-                            <div class="carousel-item active ">
-                                <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="carousel-item active "> 
+                                <form action="" style="width: 80%">
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Họ tên">
+                                        </div>
+                                        <div class="form-group d-flex justify-content-between mb-3">
+                                            <input style="width: 180px;" class="form-control" type="text" placeholder="Số điện thoại">
+                                            <select style="width: 180px;" class="form-select" name="" id="">
+                                                <option value="Chọn giới tính">Chọn giới tính</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Email">
+                                        </div>
 
-                                    <form action="" style="width: 80%">
-                                        <table width="">
-                                            <tr>
-                                                <td colspan="2">
-                                                    <input type="text" class="form-control" placeholder="Họ tên">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input class="form-control" type="text" placeholder="Số điện thoại">
-                                                </td>
-                                                <td>
-                                                    <select class="form-select" name="" id="">
-                                                        <option value="Chọn giới tính">Chọn giới tính</option>
-                                                        <option value="Male">Male</option>
-                                                        <option value="Female">Female</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <input type="text" class="form-control" placeholder="Email">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input class="form-control" type="text" placeholder="Mật khẩu">
-                                                </td>
-                                                <td>
-                                                    <input class="form-control" type="text" placeholder="Xác nhận mật khẩu">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <select class="form-select" name="" id="">
-                                                        <option value="Chọn thành phố">Chọn thành phố</option>
-                                                        <option value="TP.HCM">TP.HCM</option>
-                                                        <option value="Hà Nội">Hà Nội</option>
-                                                        <option value="Cà Mau">Cà Mau</option>
-                                                        <option value="Bến Tre">Bến Tre</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <select class="form-select" name="" id="">
-                                                        <option value="Chọn giới tính">Quận</option>
-                                                        <option value="Quận 1">Quận 1</option>
-                                                        <option value="Quận 1">Quận 2</option>
-                                                        <option value="Quận 1">Quận Gò Vấp</option>
-                                                        <option value="Quận 1">Quận 12</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <input class="form-control" type="text" class="form-control" placeholder="Địa chỉ">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <input type="date" class="form-control" value="Chọn ngày (dd/mm/yy)">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type=" email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
-                                                </td>
-                                                <td>
-                                                    <input type=" email " class="form-control" placeholder='Nhập mã capcha'>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="py-3 fw-bold">Tôi đã đọc và đồng ý với <span class="text">Chính sách</span>của chương trình.</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <button class="btn btn-primary text-white">Đăng ký</button>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </form>
-                                </div>
+                                        <div class="form-group d-flex justify-content-between mb-3">
+                                            <input style="width: 180px;" class="form-control" type="text" placeholder="Mật khẩu">
+                                            <input style="width: 180px;" class="form-control" type="text" placeholder="Xác nhận mật khẩu">
+                                        </div>
+ 
 
+                                        <div class="form-group d-flex justify-content-between mb-3">
+                                            <select style="width: 180px;" class="form-select" name="" id="">
+                                                <option value="Chọn thành phố">Chọn thành phố</option>
+                                                <option value="TP.HCM">TP.HCM</option>
+                                                <option value="Hà Nội">Hà Nội</option>
+                                                <option value="Cà Mau">Cà Mau</option>
+                                                <option value="Bến Tre">Bến Tre</option>
+                                            </select>
+                                            <select style="width: 180px;" class="form-select" name="" id="">
+                                                <option value="Chọn giới tính">Quận</option>
+                                                <option value="Quận 1">Quận 1</option>
+                                                <option value="Quận 1">Quận 2</option>
+                                                <option value="Quận 1">Quận Gò Vấp</option>
+                                                <option value="Quận 1">Quận 12</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <input class="form-control" type="text" class="form-control" placeholder="Địa chỉ">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <input type="date" class="form-control" value="Chọn ngày (dd/mm/yy)">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <input type=" email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
+                                        </div> 
+                                        <div class="form-group mb-3 d-flex justify-content-around align-items-center">
+                                            <div>352176 </div>
+                                            <div ><input type=" email " class="form-control" placeholder='Nhập mã capcha'></div>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <span class="py-3 fw-bold">Tôi đã đọc và đồng ý với <span class="text">Chính sách</span>của chương trình.</span>
+                                        </div> 
+                                        <div class="form-group mb-3">
+                                            <button class="btn btn-primary text-white">Đăng ký</button>
+                                        </div> 
+                                    </table>
+                                </form>  
                             </div>
-                            <div class="carousel-item">
-                                <div class="modal-dialog modal-dialog-scrollable">
-                                    <form action="">
-                                        <p>Vui lòng đăng nhập trước khi mua vé để tích lũy điểm, cơ hội nhận thêm nhiều ưu đãi từ chương trình thành viên Galaxy Cinema</p>
-                                        <table>
-                                            <tr class="mb-3">
-                                                <td>
-                                                    <input type="text" name="email" class="form-control" placeholder="Email" id="email">
-                                                </td>
-                                            </tr>
-                                            <tr class="mb-3">
-                                                <td class="mb-3">
-                                                    <input type="text" name="password" class="form-control" placeholder="Mật khẩu" id="password">
-                                                </td>
-                                            </tr>
-                                            <br>
-                                            <tr>
-                                                <td>
-                                                    <button class="btn btn-primary text-white">Đăng ký</button>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </form>
-                                </div>
+                            <div class="carousel-item"> 
+                                <form action="">
+                                    <p>Vui lòng đăng nhập trước khi mua vé để tích lũy điểm, cơ hội nhận thêm nhiều ưu đãi từ chương trình thành viên Galaxy Cinema</p>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="email" class="form-control" placeholder="Email" id="email">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="password" class="form-control" placeholder="Mật khẩu" id="password">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <button class="btn text-danger">Quên mật khẩu?</button>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <button class="btn btn-primary text-white">Đăng ký</button>
+                                    </div>
+                                </form> 
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
